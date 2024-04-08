@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 10px;
+}
+.headersection {
+    background: lightgrey;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    background: lightgrey;
+    border: 2px solid black;
+    margin-right: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav {
+    background: lightgrey;
+    border: 2px solid black;
+    margin-left: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: white;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 1000px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+.grid-items {
+    background: white;
+    
+    color: black;
+    border: 2px solid black;
+
+    
+}
+.one {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.bogt1 img{
+   width: 100%;
+   height: auto;
+   
+}
+
+.bogt2 img{
+    width: 100%;
+    height: auto;
+    
+ }
+ .bogt3 img{
+    width: 100%;
+    height: auto;
+    
+ }
+ .bogt4 img{
+    width: 100%;
+    height: auto;
+    
+ }
+ .bogt5 img{
+    width: 100%;
+    height: auto;
+    
+ }
+ .bogt6 img{
+    width: 100%;
+    height: auto;
+    
+ }
+ .bogt7 img{
+    width: 100%;
+    height: auto;
+    
+ }
+
+ .grid-items p {
+    padding: 5px;
+ }
+
+ .footer {
+    background: lightgrey;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (min-width: 800px) {
+    
+    .container {
+        background: white;
+        padding: 15px;
+        margin: 15px auto;
+        max-width: 1000px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
+    }
+
+    .one {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    
+    .container {
+        background: white;
+        padding: 15px;
+        margin: 15px;
+        max-width: 2000px;
+        display: grid;
+        gap: 15px;
+        grid-template-areas:
+            "b1 b1 . "
+            "b1 b1 b2"
+            "b3 b4 b4"
+            ". b4 b4"
+            "b5 b6 b7";
+        
+        .one {
+            grid-area: b1;
+        }
+        .two {
+            grid-area: b2;
+
+        }
+        .three {
+            grid-area: b3;
+        }
+        .four {
+            grid-area: b4;
+        }
+        .five {
+            grid-area: b5;
+        }
+        .six {
+            grid-area: b6;
+        }
+        .seven {
+            grid-area: b7;
+        }
+    
+    
+
+    
+       
+      
+        
+    }
+}
